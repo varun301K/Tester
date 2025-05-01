@@ -31,19 +31,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-    # Steps to add the file to GitHub via command line:
-    # 1. Initialize a Git repository (if not already done):
-    #    git init
-
-    # 2. Add the file to the staging area:
-    #    git add Student.py
-
-    # 3. Commit the changes:
-    #    git commit -m "Add Student.py file"
-
-    # 4. Add the remote repository (replace <repository-url> with your GitHub repo URL):
-    #    git remote add origin <repository-url>
-
-    # 5. Push the changes to the GitHub repository:
-    #    git push -u origin main
