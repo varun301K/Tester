@@ -4,7 +4,7 @@ pipeline{
             stage ("Build"){
                 steps{
                     bat '''
-                    C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip venv venv\\scripts\\acctivate
+                    C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip && python -m venv venv && venv\\Scripts\\activate
                 '''
                 }
         }
