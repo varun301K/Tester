@@ -1,0 +1,39 @@
+pipeline{
+    agent any{
+        stages{
+            stage("Build"){
+                steps{
+                    bat '''
+                    C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip venv venv\\scripts\\acctivate
+                '''
+                }
+        }
+            stage("Test"){
+                steps{
+                    bat '''
+                    C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip venv venv\\scripts\\acctivate
+                '''
+                }
+            }
+            stage("Deploy"){
+                steps{
+                    bat '''
+                    C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip venv venv\\scripts\\acctivate
+                '''
+                }
+            }
+        }
+        post{
+            always{
+                echo "Cleaning up..."
+                cleanWs()
+            }
+            success{
+                echo "Build was successful!"
+            }
+            failure{
+                echo "Build failed!"
+            }
+        }
+    }
+}
