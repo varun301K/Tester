@@ -1,7 +1,7 @@
 pipeline{
-    agent any{
+    agent any
         stages{
-            stage("Build"){
+            stage ("Build"){
                 steps{
                     bat '''
                     C:\\Users\\Ragasudhe\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe -m pip install --upgrade pip venv venv\\scripts\\acctivate
